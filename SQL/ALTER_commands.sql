@@ -1,3 +1,4 @@
+/*Change table name and Column name*/
 CREATE TABLE student(
   std_name VARCHAR(50),
   std_id INT PRIMARY KEY,
