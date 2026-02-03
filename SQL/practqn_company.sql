@@ -1,6 +1,11 @@
 /*
-Create a table named company that contains company_id,name_of_company,address,email_id  and phone number. Insert 5 values into the table. Rename table compnay into another name
-.Rename phone number with another name. Add 2 new columns DOB and gender.select name and address from table.*/
+Create a table named company that contains company_id,name_of_company,address,email_id  and phone number.
+Insert 5 values into the table.
+Rename table compnay into another name
+.Rename phone number with another name. 
+Add 2 new columns DOB and gender.
+select name and address from table. 
+Remove the column DOB and gender*/
 CREATE TABLE company(
   company_id INT PRIMARY KEY,
   company_name VARCHAR(50),
@@ -29,6 +34,8 @@ SELECT * FROM organization;
 ALTER TABLE organization add(DOB DATE, gender VARCHAR(20));
 SELECT * FROM organization;
 
-SELECT company_name, address FROM organization
-ALTER TABLE organization add(DOB DATE, gender VARCHAR(20));
+SELECT company_name, address FROM organization;
+
+ALTER TABLE organization DROP COLUMN DOB;
+ALTER TABLE organization DROP COLUMN gender;
 SELECT * FROM organization;
