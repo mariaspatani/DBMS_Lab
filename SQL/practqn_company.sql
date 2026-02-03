@@ -1,8 +1,8 @@
 /*
 Create a table named company that contains company_id,name_of_company,address,email_id  and phone number.
 Insert 5 values into the table.
-Rename table compnay into another name
-.Rename phone number with another name. 
+Rename table compnay into another name.
+Rename phone number with another name. 
 Add 2 new columns DOB and gender.
 select name and address from table. 
 Remove the column DOB and gender*/
