@@ -28,3 +28,7 @@ SELECT * FROM organization;
 
 ALTER TABLE organization add(DOB DATE, gender VARCHAR(20));
 SELECT * FROM organization;
+
+SELECT company_name, address FROM organization
+ALTER TABLE organization add(DOB DATE, gender VARCHAR(20));
+SELECT * FROM organization;
