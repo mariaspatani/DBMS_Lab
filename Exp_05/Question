@@ -1,1 +1,37 @@
+DBMS LAB QUESTIONS
+5.Create a table named student that contain mark of 10 students for 3 subjects (Physics, Chemistry, Mathematics). The total marks for physics and Chemistry  is 25. While for Mathematics it is 50. The pass mark for Physics and Chemistry is 12 and for Mathematics it is 25.A student awarded a pass if he has passed all the subjects.
+ a) Create a table named student(roll primary key,name,mark of 3 subjects).
+b) Insert 10 values to the table.
+c)Find class average fort the subject physics.
+d)Find the highest marks for Mathematics (To be displayed as highest_marks_maths).
+e) Find the lowest marks for chemistry (To be displayed as lowest_marks_chemistry).
+f) Find the total number of students who have got a pass in Physics.
+g) Generate the list of students who have passed in all the subjects.
+h)Find the total marks for each student as totalmark.
+i)Find the class average.
+j) Find the total no. of students who have got pass.
+
+5.2) Create table items(itemid,itemname,catergory,price instock),
+         Create table customers(custid,custname,address,state)
+          Create table orders(orderid,custid,itemid,quantity,orderdate)
+ Create table delivery(deliveryid,custid,orderid)
+
+
+
+a)insert values into tables.
+b)Find the details of all customers grouped by state.
+c)Display the details of all items grouped by category and having a price greater than average price of all items.
+d)List the customer names that have registered more than 5 orders.
+
+6. Create table items(itemid,itemname,catergory,price instock),
+         Create table customers(custid,custname,address,state)
+          Create table orders(orderid,custid,itemid,quantity,orderdate)
+           Create table delivery(deliveryid,custid,orderid)
+
+a)	insert values into table.
+b)	List the details of all customers who have placed an order.
+c)	List the details of all customers whose orders have been delivered .
+d)	Find the order date for all customers 
+
+
 
