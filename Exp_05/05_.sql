@@ -5,9 +5,9 @@
 CREATE TABLE STUDENT (
     Roll INT PRIMARY KEY,
     Name VARCHAR(50),
-    Physics INT CHECK (Physics <= 25),
-    Chemistry INT CHECK (Chemistry <= 25),
-    Mathematics INT CHECK (Mathematics <= 50)
+    Physics INT,
+    Chemistry INT,
+    Mathematics INT
 );
 
 /* b) Insert 10 Values */
