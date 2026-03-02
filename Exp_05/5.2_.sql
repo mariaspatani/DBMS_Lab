@@ -2,12 +2,12 @@
 /* Creation of Items, Customers, Orders and Delivery Tables */
 
 /* Create ITEMS table */
-CREATE TABLE ITEMS(
-    itemid INT PRIMARY KEY,
-    itemname VARCHAR(50),
-    category VARCHAR(50),
-    price INT,
-    instock INT
+CREATE TABLE STUDENT (
+    Roll INT PRIMARY KEY,
+    Name VARCHAR(50),
+    Physics INT,
+    Chemistry INT,
+    Mathematics INT
 );
 
 /* Create CUSTOMERS table */
