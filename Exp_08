@@ -1,0 +1,64 @@
+-- CREATE TABLE BANK
+
+CREATE TABLE bank(
+ bankcode INT PRIMARY KEY,
+ bankname VARCHAR(50),
+ headoffice VARCHAR(50),
+ branches VARCHAR(50)
+);
+
+
+-- INSERT VALUES INTO BANK
+
+INSERT INTO bank VALUES
+(1,'SBI','Ernakulam','Kottayam'),
+(2,'HDFC','Mumbai','Kochi'),
+(3,'ICICI','Ernakulam','Kottayam'),
+(4,'AXIS','Delhi','Trivandrum');
+
+
+-- CREATE TABLE BRANCH
+
+CREATE TABLE branch(
+ branchid INT PRIMARY KEY,
+ branchname VARCHAR(50),
+ bankcode INT
+);
+
+
+-- INSERT VALUES INTO BRANCH
+
+INSERT INTO branch VALUES
+(101,'Kottayam',1),
+(102,'Kochi',2),
+(103,'Kottayam',3),
+(104,'Trivandrum',4);
+
+
+-- a) CREATE VIEW bank_head_office
+-- Banks whose head office is at Ernakulam
+
+CREATE VIEW bank_head_office AS
+SELECT bankcode,bankname,headoffice,branches
+FROM bank
+WHERE headoffice='Ernakulam';
+
+
+-- VIEW THE RESULT
+
+SELECT * FROM bank_head_office;
+
+
+
+-- b) CREATE VIEW bank_branch
+-- Banks having branches at Kottayam
+
+CREATE VIEW bank_branch AS
+SELECT branchid,branchname,bankcode
+FROM branch
+WHERE branchname='Kottayam';
+
+
+-- VIEW THE RESULT
+
+SELECT * FROM bank_branch;
