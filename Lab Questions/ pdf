@@ -1,1 +1,60 @@
-.
+5.Create a table named student that contain mark of 10 students for 3 subjects (Physics, Chemistry, Mathematics). The total marks for physics and Chemistry  is 25. While for Mathematics it is 50. The pass mark for Physics and Chemistry is 12 and for Mathematics it is 25.A student awarded a pass if he has passed all the subjects.
+ a) Create a table named student(roll primary key,name,mark of 3 subjects).
+b) Insert 10 values to the table.
+c)Find class average fort the subject physics.
+d)Find the highest marks for Mathematics (To be displayed as highest_marks_maths).
+e) Find the lowest marks for chemistry (To be displayed as lowest_marks_chemistry).
+f) Find the total number of students who have got a pass in Physics.
+g) Generate the list of students who have passed in all the subjects.
+h)Find the total marks for each student as totalmark.
+i)Find the class average.
+j) Find the total no. of students who have got pass.
+
+5.2) Create table items(itemid,itemname,catergory,price instock),
+         Create table customers(custid,custname,address,state)
+          Create table orders(orderid,custid,itemid,quantity,orderdate)
+ Create table delivery(deliveryid,custid,orderid)
+
+
+
+a)insert values into tables.
+b)Find the details of all customers grouped by state.
+c)Display the details of all items grouped by category and having a price greater than average price of all items.
+d)List the customer names that have registered more than 5 orders.
+
+6. Set operators,nested queries and join queries
+Create table items(itemid,itemname,catergory,price instock),
+         Create table customers(custid,custname,address,state)
+          Create table orders(orderid,custid,itemid,quantity,orderdate)
+           Create table delivery(deliveryid,custid,orderid)
+
+a)	insert values into table.
+b)	List the details of all customers who have placed an order.
+c)	List the details of all customers whose orders have been delivered .
+d)	Find the order date for all customers whose name starts in the letter ‘j’.
+e)	Display the name and price of all items bought by the customer ‘mickey’.
+f)	List the details of all customers who have placed an order after January 2013 and not received delivery of items.
+g)	Find the itemid of items which has either been ordered or not delivered.
+h)	Find the names of all customers who have placed an order and have their orders.
+i)	Find the custname of all customers who have placed an order but not having their orders  delivered.
+j)	Find the name of the customer who has placed the most number of orders.
+k)	Find the details of all customers who have purchased items exceeding a price of 5000$.
+l)	Find the name and address of customers who has not ordered a ‘samsung GalaxyS4’.
+m)	Perform left outer join and right outer join on customers and orders table.
+n)	Find the details of all customer grouped by state.
+o)	Display the details of all items grouped by category and having a price grater than average price of all items.
+
+7.SQL TCL Commands and DCL Commnads
+
+Create a table bank with bank name, head office, branch and branch code as attributes and perform commit, savepoint and rollback commands. DCL(Grant,revoke).
+
+8.creation of views
+Create a table bank with bank name, head office, branch and branch code as attributes and insert values into it.
+Create a table named branch with branchid,branchname,banked.
+
+a)create a view named bank_head office  to hold the details (bankcode,bankname,headoffice,branches )of all bank whose head office at Ernakulam.
+
+b)Create a view named bank_branch to hold the details (branched,branchname,bankcode)of all bank who have branches at Kottayam.
+
+
+
