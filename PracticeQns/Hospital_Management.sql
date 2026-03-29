@@ -70,3 +70,19 @@ SELECT * FROM patient_doctor_view;
 
 -- simple view: from one table
 -- complex view: multiple tables/join/group by
+
+--Display patient name and doctor name
+SELECT p.pname, d.dname
+from patient p JOIN appointment a ON p.pid=a.pid
+JOIN doctor d ON a.did=d.did
+--Display patient name, doctor name, and date
+SELECT  DISTINCT p.pname, d.dname,a.app_date
+from patient p JOIN appointment a ON p.pid=a.pid
+JOIN doctor d ON a.did=d.did
+
+--Display all patients treated by Neuro doctors
+SELECT p.pname
+from patient p JOIN appointment a ON p.pid=a.pid
+JOIN doctor d ON a.did=d.did
+where d.specialization='Neuro';
+
